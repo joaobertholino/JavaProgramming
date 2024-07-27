@@ -20,5 +20,6 @@ public class AnimalTester {
 		System.out.println(shark.growls());
 		System.out.println(shark.reproduces());
 		System.out.println(shark.die());
+		System.out.println(shark.swin());
 	}
 }

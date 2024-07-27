@@ -13,5 +13,10 @@ public class MainTester {
 		System.out.println("New password of ccTwo: " + ccTwo.getPasswordClassOne());
 
 		AbstractClass acOne = new ConcreteClass();
+		System.out.println(acOne.INTERFACE_VAR);
+		acOne.interfaceMethodOne();
+		acOne.interfaceMethodTwo();
+
+		AbstractClass ccThere = new ConcreteClass(6589);
 	}
 }

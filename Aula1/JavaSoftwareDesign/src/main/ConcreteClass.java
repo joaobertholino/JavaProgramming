@@ -2,9 +2,18 @@ package main;
 
 public class ConcreteClass extends AbstractClass {
 //	Properties
-	public int password = 3333;
+	public int password;
 
-//	Behaviors
+//	Constructors
+	public ConcreteClass() {
+		super();
+	}
+
+	public ConcreteClass(int password) {
+		super(password);
+	}
+
+	//	Behaviors
 	@Override
 	public int getPassword() {
 		return this.password;
@@ -18,5 +27,10 @@ public class ConcreteClass extends AbstractClass {
 	@Override
 	public String sayHi() {
 		return "Hi";
+	}
+
+	@Override
+	public void interfaceMethodTwo() {
+		System.out.println("Método dois da interface um");
 	}
 }

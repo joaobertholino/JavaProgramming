@@ -1,10 +1,18 @@
 package main;
 
-public abstract class AbstractClass {
+public abstract class AbstractClass implements Interface1 {
 //	Properties
-	public int password = 9999;
+	public int password;
 
-//	Behaviors
+//	Constructors
+	public AbstractClass() {
+	}
+
+	public AbstractClass(int password) {
+		this.password = password;
+	}
+
+	//	Behaviors
 	public int getPassword() {
 		return this.password;
 	}

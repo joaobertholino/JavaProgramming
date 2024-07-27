@@ -6,6 +6,16 @@ public abstract class Animal {
 	private int age;
 	private double mass;
 
+	public Animal() {
+	}
+
+	public Animal(String scientificName, String popularName, int age, double mass) {
+		this.scientificName = scientificName;
+		this.popularName = popularName;
+		this.age = age;
+		this.mass = mass;
+	}
+
 	public String getScientificName() {
 		return scientificName;
 	}
